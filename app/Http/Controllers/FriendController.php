@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Friend;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Auth;
+
 
 class FriendController extends Controller
 {
+
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +18,20 @@ class FriendController extends Controller
      */
     public function index()
     {
-        //
+        $users = 0;  
+
+        $friends = 0;  
+
+        $alllists = User::all();
+
+        if (Auth::check()) {
+        $users = User::where('id', '=', Auth::user()->id)->firstOrFail();
+       // $friends = User::where('id', '=', Auth::user()->id)->firstOrFail();
+        } 
+      
+    
+        
+        return view('welcome', compact(['users', 'friends','alllists']));
     }
 
     /**

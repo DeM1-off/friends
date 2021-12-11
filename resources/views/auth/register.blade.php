@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Регистрация') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('register') }}"  enctype="multipart/form-data">
                         @csrf
 
                         <div class="row mb-3">
@@ -52,7 +52,7 @@
                                 @enderror
                             </div>
                         </div>
-
+                     
                         <div class="row mb-3">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Потвердите пароль') }}</label>
 
@@ -60,6 +60,32 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <label for="hobbies" class="col-md-4 col-form-label text-md-right">{{ __('Ваши интересы') }}</label>
+
+                            <div class="col-md-6">
+                                <input  type="text" class="form-control" name="hobbies" required >
+                            </div>
+                            @error('hobbies')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="validatedCustomFile" class="col-md-4 col-form-label text-md-right">{{ __('Загрузите фотографию') }}</label>
+                            <div class="col-md-6">
+                            <input type="file" name="avatar" class="custom-file-input" id="validatedCustomFile" required>
+                            <label class="custom-file-label" for="validatedCustomFile">Выберите файл ...</label>
+                            @error('avatar')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+     
+                        </div>
+
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">

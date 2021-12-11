@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\FriendController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +21,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::resource('/', FriendController::class);
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

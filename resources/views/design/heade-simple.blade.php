@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        
+   
+    <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
         <title>Young grace</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+           <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon">
 
-        <meta property="og:image" content="https://i.imgur.com/EfCi3s5.png" />
-       <meta property="og:image:secure_url" content="https://i.imgur.com/EfCi3s5.png" />
-        <meta property="og:image:type" content="image/png" />
-       <meta property="og:image:width" content="100px" />
-         <meta property="og:image:height" content="100px" />
-          <meta property="og:image:alt" content="Юрий Гец" />
+
+        <link href="css/styles.css" rel="stylesheet" />
+
+
+        
+        <meta property="og:title" content="Молодежная  церковь" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://www.younggrace.space" />
+<meta property="og:image" content="img/logo2.jpg"   />
     </head>
 
     

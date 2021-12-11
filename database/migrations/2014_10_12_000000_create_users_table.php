@@ -17,8 +17,12 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('hobbies');
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('avatar')->default('img/logo.jpg');   
             $table->string('password');
+            $table->integer('status')->default(1);  // его уже выбрали
+            $table->integer('friend_id')->default(0); //записываеться id пользователь
             $table->rememberToken();
             $table->timestamps();
         });
